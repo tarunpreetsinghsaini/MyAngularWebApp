@@ -4,7 +4,11 @@
 
 angular.module('MyFirstApp', [])
 
-.controller('MyFirstController', function ($scope) {
+.controller('LunchCheckController', LunchCheckController);
+
+
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController($scope) {
 
 	$scope.inputeat = "";
 	$scope.Output  = "";
@@ -35,7 +39,7 @@ angular.module('MyFirstApp', [])
 
 	}
 
-});
+}
 
 
 
